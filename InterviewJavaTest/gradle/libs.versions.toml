@@ -1,0 +1,16 @@
+[versions]
+apacheCommonsLang3 = "3.17.0"
+springBoot = "3.4.2"
+springDepManagement =  "1.1.7"
+
+[libraries]
+apache-commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "apacheCommonsLang3" }
+springBootStarterWeb = { module = "org.springframework.boot:spring-boot-starter-web" }
+jacksonDatabind = { module = "com.fasterxml.jackson.core:jackson-databind" }
+
+#Tests
+springBootStarterTest =  { module = "org.springframework.boot:spring-boot-starter-test" }
+
+[plugins]
+springBoot = { id = "org.springframework.boot",  version.ref = "springBoot" }
+springDeps = { id = "io.spring.dependency-management", version.ref = "springDepManagement" }

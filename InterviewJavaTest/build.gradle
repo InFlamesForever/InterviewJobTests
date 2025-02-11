@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    alias(libs.plugins.springBoot)
+    alias(libs.plugins.springDeps)
+}
+
+group = 'com.example'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+dependencies {
+    implementation libs.springBootStarterWeb
+    implementation libs.jacksonDatabind
+    implementation libs.apache.commons.lang3
+
+    testImplementation libs.springBootStarterTest
+}
+
+test {
+    useJUnitPlatform()
+}
