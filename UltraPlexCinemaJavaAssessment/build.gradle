@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    alias(libs.plugins.springBoot)
+    alias(libs.plugins.springDeps)
+}
+
+group = 'com.ultraplexcinema'
+version = '0.0.1'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    implementation libs.springBootStarterWeb
+    implementation libs.springBootStarterSecurity
+    implementation libs.springBootStarterDataJpa
+    implementation libs.jacksonDatabind
+    implementation libs.apache.commons.lang3
+
+    implementation libs.postgreSQL
+
+    compileOnly libs.lombok
+    annotationProcessor libs.lombok
+
+    testImplementation libs.springBootStarterTest
+}
