@@ -21,9 +21,9 @@ chmod +x run_postgres.sh
 ```
 
 <h3> Run the spring app:</h3>
-TODO: rename project
+
 ```bash
-java -jar build/libs/untitled-1.0.0.jar 
+java -jar build/libs/UltraPlexCinemaJavaAssessment-0.0.1.jar
 ```
 
 <h3> Simple example curl request </h3>
