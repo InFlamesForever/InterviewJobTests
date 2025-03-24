@@ -5,7 +5,6 @@ DB_NAME="ultraplex"
 DB_USER="postgres"
 DB_PASSWORD="password"
 CONTAINER_NAME="ultraplex-postgres"
-SCHEMA_FILE="src\main\resources\schema.sql"
 
 # Step 1: Start PostgreSQL Docker container
 echo "Starting PostgreSQL container..."

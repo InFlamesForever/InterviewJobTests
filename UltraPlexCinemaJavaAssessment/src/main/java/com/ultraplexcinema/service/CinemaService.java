@@ -117,7 +117,7 @@ public class CinemaService {
         return new Ticket(
                 savedBooking.getId().toString(),
                 screening.getId().toString(),
-                screening.getMovie().getTitle(),
+                screening.getMovieTitle(),
                 LocalDateTime.of(
                         screening.getScreeningDate(),
                         screening.getStartTime()

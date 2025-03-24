@@ -17,6 +17,10 @@ repositories {
     mavenCentral()
 }
 
+test {
+    useJUnitPlatform()
+}
+
 
 dependencies {
     implementation libs.springBootStarterWeb
@@ -31,4 +35,7 @@ dependencies {
     annotationProcessor libs.lombok
 
     testImplementation libs.springBootStarterTest
+    testImplementation libs.h2DB
+    testImplementation libs.testContainers
+    testImplementation libs.testContainersPostgres
 }

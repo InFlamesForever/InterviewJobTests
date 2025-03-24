@@ -2,6 +2,7 @@
 springBoot = "3.4.4"
 apacheCommonsLang3 = "3.17.0"
 springDepManagement =  "1.1.7"
+testContainersVersion = "1.20.6"
 
 [libraries]
 apache-commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "apacheCommonsLang3" }
@@ -14,6 +15,9 @@ lombok = { module = "org.projectlombok:lombok" }
 
 #Tests
 springBootStarterTest =  { module = "org.springframework.boot:spring-boot-starter-test" }
+h2DB =  { module = "com.h2database:h2" }
+testContainersPostgres =  { module = "org.testcontainers:postgresql", version.ref = "testContainersVersion" }
+testContainers =  { module = "org.testcontainers:junit-jupiter", version.ref = "testContainersVersion" }
 
 [plugins]
 springBoot = { id = "org.springframework.boot",  version.ref = "springBoot" }
